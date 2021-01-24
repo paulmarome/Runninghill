@@ -25,7 +25,6 @@ namespace Search
 
         static void Main(string[] args) {
             Console.Write(findUniqueCharacter("Babojujabyou"));
-            Console.ReadKey();
         }
     }
 }
