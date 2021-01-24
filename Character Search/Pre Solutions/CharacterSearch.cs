@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+System.Threading.Tasks;
 namespace Search
 {
     class CharacterSearch
@@ -43,7 +38,6 @@ namespace Search
 
         static void Main(string[] args) {
             Console.Write(findUniqueCharacter("PopularStar"));
-            Console.ReadKey();
         }
     }
 }
