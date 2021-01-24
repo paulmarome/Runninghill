@@ -2,6 +2,7 @@
 #include <algorithm> 
 #include <string> 
 #include <cctype>
+
 using namespace std;
 
 string find_unique_character(string str);
