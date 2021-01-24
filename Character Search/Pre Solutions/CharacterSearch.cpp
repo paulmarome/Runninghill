@@ -12,7 +12,8 @@ int main() {
 	cout << result << endl;
 }
 
-static string find_unique_character(string str) {	
+static string find_unique_character(string str) 
+{	
 	string chars = lower(str);
 	string copies;
 
@@ -30,7 +31,8 @@ static string find_unique_character(string str) {
 			continue;
 		}
 
-		for (int next = target_index + 1; next < size; ++next) {
+		for (int next = target_index + 1; next < size; ++next) 
+		{
 			if (current == chars.at(next)) {
 				copies += current;
 				++frequency;
