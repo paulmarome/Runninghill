@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +33,7 @@ namespace Search {
         }
 
         static void Main(string[] args) {
-            Console.Write(findUniqueCharacter("PopularStar"));
+            Console.Write(findUniqueCharacter("Popular"));
         }
     }
 }
