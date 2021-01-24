@@ -18,9 +18,7 @@ namespace Search {
                 current = chars[targetIndex];
                 int index = copies.ToString().IndexOf(current);
 
-                if (index >= 0) {
-                    continue;
-                }
+                if (index >= 0) continue;
 
                 for (int next = targetIndex + 1; next < size; next++) {
                     if (current == chars[next]) {
@@ -30,9 +28,7 @@ namespace Search {
                     }    
                 }
 
-                if (frequency < 1) {
-                    return chars.Substring(targetIndex, 1);
-                }
+                if (frequency < 1) return chars.Substring(targetIndex, 1);
             }
             return $"{chars} has no unique character";
         }
