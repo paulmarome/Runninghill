@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Search
-{
-    class CharacterSearch
-    {
+namespace Search {
+    class CharacterSearch {
         public static string findUniqueCharacter(string str) {
             string chars = str.ToLower();
             int size = str.Length;
@@ -24,7 +22,7 @@ namespace Search
         }
 
         static void Main(string[] args) {
-            Console.Write(findUniqueCharacter("Babojujabyou"));
+            Console.Write(findUniqueCharacter("Popular"));
         }
     }
 }
