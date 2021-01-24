@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,7 @@ namespace Search
                     return chars.Substring(targetIndex, 1);
                 }
             }
-            return chars + " has no unique characters";
+            return $"{chars} has no unique characters";
         }
 
         static void Main(string[] args) {
