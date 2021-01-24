@@ -2,6 +2,7 @@
 #include <algorithm> 
 #include <string> 
 #include <cctype>
+
 using namespace std;
 
 string lower(string str);
@@ -28,20 +29,19 @@ static string find_unique_character(string str)
 		int index = copies.find(current);
 
 		if (index >= 0) {
-			continue;
+		    continue;
 		}
 
-		for (int next = target_index + 1; next < size; ++next) 
-		{
-			if (current == chars.at(next)) {
-				copies += current;
-				++frequency;
-				break;
-			}
+		for (int next = target_index + 1; next < size; ++next) {
+		     if (current == chars.at(next)) {
+			 copies += current;
+			 ++frequency;
+		         break;
+		     }
 		}
 		
 		if (frequency < 1) {
-			return chars.substr(target_index, 1);
+		    return chars.substr(target_index, 1);
 		}
 	}
 
