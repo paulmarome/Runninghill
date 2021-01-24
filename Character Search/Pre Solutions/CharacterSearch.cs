@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Search
-{
-    class CharacterSearch
-    {
-        public static string findUniqueCharacter(string str)
-        {
+
+namespace Search {
+    class CharacterSearch {
+        public static string findUniqueCharacter(string str) {
             string chars = str.ToLower();
             StringBuilder copies = new StringBuilder();
-
             int size = str.Length;
             int frequency;
             char current;
