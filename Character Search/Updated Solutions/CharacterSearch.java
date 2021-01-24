@@ -1,6 +1,6 @@
 public class StringSearch
 {
-	private static String findUniqueCharacter(String str)
+    private static String findUniqueCharacter(String str)
     {
         String chars = str.toLowerCase();
         int size = chars.length();
@@ -14,12 +14,11 @@ public class StringSearch
                 return chars.substring(targetIndex, targetIndex + 1);
             }
         }
-
         return String.format("%s has no unique character", chars);
     }
 	
-	public static void main(String[]) {
-		String result = findUniqueCharacter("AppleApp");
-		System.out.println(result);
-	}
+    public static void main(String[]) {
+	String result = findUniqueCharacter("AppleApp");
+	System.out.println(result);
+    }
 }
