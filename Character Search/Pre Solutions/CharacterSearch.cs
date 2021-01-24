@@ -33,7 +33,7 @@ namespace Search {
         }
 
         static void Main(string[] args) {
-            Console.Write(findUniqueCharacter("Popular"));
+            Console.Write(findUniqueCharacter("Pop"));
         }
     }
 }
