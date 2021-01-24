@@ -20,7 +20,7 @@ namespace Search
                     return chars.Substring(targetIndex, 1);
                 }
             }
-            return $"{chars} has no unique characters";
+            return $"{chars} has no unique character";
         }
 
         static void Main(string[] args) {
