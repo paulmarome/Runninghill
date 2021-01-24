@@ -17,8 +17,7 @@ namespace Search
             int frequency;
             char current;
 
-            for (int targetIndex = 0; targetIndex < size; targetIndex++)
-            {
+            for (int targetIndex = 0; targetIndex < size; targetIndex++) {
                 frequency = 0;
                 current = chars[targetIndex];
                 int index = copies.ToString().IndexOf(current);
@@ -27,8 +26,7 @@ namespace Search
                     continue;
                 }
 
-                for (int next = targetIndex + 1; next < size; next++)   
-                {
+                for (int next = targetIndex + 1; next < size; next++) {
                     if (current == chars[next]) {
                         copies.Append(current);
                         frequency++;
@@ -40,7 +38,6 @@ namespace Search
                     return chars.Substring(targetIndex, 1);
                 }
             }
-
             return $"{chars} has no unique character";
         }
 
