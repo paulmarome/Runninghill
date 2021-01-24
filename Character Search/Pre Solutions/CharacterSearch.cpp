@@ -4,11 +4,6 @@
 #include<fstream>
 #include <string> 
 #include <cctype>
-#include <cctype>
-#include <cctype>
-#include <cctype>
-#include <cctype>
-#include <cctype>
 
 using namespace std;
 
